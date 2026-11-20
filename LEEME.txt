@@ -1,0 +1,25 @@
+HABLA FLUIDO - cómo ponerla a funcionar
+========================================
+
+1) Copia estas carpetas/archivos DENTRO de tu proyecto "habla_fluido"
+   (el que creaste con flutter create) y acepta REEMPLAZAR:
+     lib\        (completa)
+     test\       (completa)
+     proxy\      (completa)
+     pubspec.yaml
+     android\app\src\main\AndroidManifest.xml
+
+2) Borra si los tienes:  lib\dominio\comprador.dart   y   test\comprador_test.dart
+
+3) En la terminal, dentro de habla_fluido:
+     flutter pub get
+     flutter test          (deben pasar todas)
+     flutter run           (con el emulador abierto)
+
+4) Proxy (opcional, no hace falta para que la app funcione):
+     cd proxy
+     node --test
+     cd ..
+
+La app usa el tutor simulado: funciona sin internet y sin llave de IA.
+El micrófono funciona mejor en un celular físico que en el emulador.
